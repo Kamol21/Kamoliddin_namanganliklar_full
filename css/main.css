@@ -143,6 +143,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding-left: 0px;
 }
 .main-intro-li{
     width: 370px;
