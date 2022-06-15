@@ -24,6 +24,15 @@ body{
  .header-top {
     background-color:#F6F6F6;
 }
+.visual-hidden {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+  }
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -211,10 +220,11 @@ body{
     position: absolute;
     width: 1050px;
     height: 100px;
-    margin-left: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 60px;
     margin-top: 50px;
     background: url("../images/article.svg");
-
 }
 .article-box{
     width: 1050px;
@@ -354,6 +364,7 @@ body{
 }
 .mini-container-right {
     width: 350px;
+    margin-left: 25px;
     background-color: #F6F6F6;
     border-radius: 15px;
     list-style: none;
@@ -389,8 +400,9 @@ body{
     margin-left: auto;
 }
 .for-lsn {
+    width: 226px;
     list-style: none;
-    margin-left: 100px;
+    margin-left: 30px;
 }
 .end{
     width: 900px;
@@ -445,10 +457,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: -40px;
 }
 .for-contact-lsn{
+    margin-right: 10px;
     list-style: none;
+    padding-left: 0px;
 }
 .name-phone{
     width: 680px;
@@ -458,37 +471,38 @@ body{
 }
 .input-username{
     display: block;
-    width: 300px;
+    width: 335px;
     padding: 15px;
     outline: none;
-    border: 1px solid;
+    border: 1px solid lightgray;
     border-radius: 10px;
-    background-color: #EEEEEE;
+    background-color: #fff;
 }
 .input-username:focus{
     box-shadow: 0 0 4px 2px red;
 }
 .email-text{
     display: block;
-    width: 650px;
+    width: 680px;
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 15px;
     outline: none;
-    border: 1px solid;
+    border: 1px solid lightgray;
     border-radius: 10px;
-    background-color: #EEEEEE;
+    background-color: #fff;
 }
 .email-text:focus{
     box-shadow: 0 0 4px 2px red;
 }
 .comment{
+    width: 680px;
     display: block;
     outline: none;
     padding: 15px;
-    border: 1px solid;
+    border: 1px solid lightgray;
     border-radius: 10px;
-    background-color: #EEEEEE;
+    background-color: #fff;
 }
 .comment:focus{
     box-shadow: 0 0 4px 2px red;
@@ -511,3 +525,9 @@ textarea{
     line-height: 19px;
     text-decoration: none;
 }
+.main-intro-li-img{
+    margin-right: 50px;
+}
+/* .contact-img-left{
+    margin-left: 50px;
+} */
